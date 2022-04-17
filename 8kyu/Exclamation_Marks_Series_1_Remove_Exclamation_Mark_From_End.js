@@ -21,8 +21,6 @@ function remove(s) {
   return strArr.join("");
 }
 
-
 console.log(remove("Hi!"), "Hi");
 console.log(remove("Hi!!!"), "Hi!!");
-console.log(remove("!Hi"), "!Hi");
 console.log(remove("!Hi!"), "!Hi");
