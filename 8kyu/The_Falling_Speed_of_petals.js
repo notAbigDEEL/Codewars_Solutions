@@ -13,15 +13,15 @@ Notes:
 
  */
 
-function sakuraFall(v) {
-  if (v < 0) {
-    return 0;
-  } else if (v === 0) {
-    return 0;
-  } else {
-    return (80 * 5) / v;
-  }
-}
+    function sakuraFall(v) {
+        if (v < 0) {
+          return 0;
+        } else if (v === 0) {
+          return 0;
+        } else {
+          return (80 * 5) / v;
+        }
+      }
 
 console.log(sakuraFall(5), 80);
 console.log(sakuraFall(0), 0);
