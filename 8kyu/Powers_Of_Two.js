@@ -6,17 +6,15 @@ n = 1  ==> [1, 2]     # [2^0, 2^1]
 n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
  */
 
-function powersOfTwo(n){
-    let result = []
-    for(let i = 0; i <= n; i++){
-      result.push(2**i)
-    }
-    return result
+function powersOfTwo(n) {
+  let result = [];
+  for (let i = 0; i <= n; i++) {
+    result.push(2 ** i);
   }
+  return result;
+}
 
-    console.log(powersOfTwo(0), [1])
-    console.log(powersOfTwo(2), [1, 2, 4])
-    console.log(powersOfTwo(3), [1, 2, 4, 8])
-    console.log(powersOfTwo(4), [1, 2, 4, 8, 16])
-
-    
+console.log(powersOfTwo(0), [1]);
+console.log(powersOfTwo(2), [1, 2, 4]);
+console.log(powersOfTwo(3), [1, 2, 4, 8]);
+console.log(powersOfTwo(4), [1, 2, 4, 8, 16]);

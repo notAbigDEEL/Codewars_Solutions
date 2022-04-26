@@ -3,14 +3,13 @@
     You only need to worry about english grammar rules for this kata, where anything that isn't singular (one of something), it is plural (not one of something).
 
 All values will be positive integers or floats, or zero.
-
- */
+*/
 
 function plural(n) {
-    return n !== 1;
-    }
+  return n !== 1;
+}
 
-    console.log(plural(1), false);
-    console.log(plural(0), false);
-    console.log(plural(2), true);
-    console.log(plural(5), true);
+console.log(plural(1), false);
+console.log(plural(0), false);
+console.log(plural(2), true);
+console.log(plural(5), true);
