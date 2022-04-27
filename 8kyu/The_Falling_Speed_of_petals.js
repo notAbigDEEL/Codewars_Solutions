@@ -9,8 +9,6 @@ Notes:
     The movement of the petal is quite complicated, so in this case we can see the velocity as a constant during its falling.
     Pay attention to the data types.
     If the initial velocity is non-positive, the return value should be 0
-
-
  */
 
 function sakuraFall(v) {
