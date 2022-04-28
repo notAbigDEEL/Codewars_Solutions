@@ -1,16 +1,19 @@
 /*Write a function that returns the total surface area and volume of a box as an array: [area, volume]
- */
+ 
+*/
 
 // function getSize(width, height, depth) {
 //     let tsa = height * width * 2 + width * depth * 2 + depth * height * 2;
 //     let volume = width * height * depth;
 //     let result = [tsa, volume];
-//     return result;  
+//     return result;
 // }
 
-function getSize(width, height, depth){
-    return  [(width * height * 2) + (width * depth * 2) + (depth * height * 2), width * height * depth];
-    
+function getSize(width, height, depth) {
+  return [
+    width * height * 2 + width * depth * 2 + depth * height * 2,
+    width * height * depth,
+  ];
 }
 
 console.log(getSize(1, 2, 3), [18, 6]);
