@@ -11,20 +11,22 @@ Note: for this kata y isn't considered a vowel.
  */
 
 function disemvowel(str) {
-    let vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
-    let result = ''
-  
-    
-    for (let i = 0; i < str.length; i++){
-      if (vowels.includes(str[i])){
-        continue
-      }else{
-        result += str[i]
-      }
+  let vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"];
+  let result = "";
+
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      continue;
+    } else {
+      result += str[i];
     }
-    return result
   }
+  return result;
+}
 
-
-console.log(disemvowel("This website is for losers LOL!"), "Ths wbst s fr lsrs LL!");
+console.log(
+  disemvowel("This website is for losers LOL!"),
+  "Ths wbst s fr lsrs LL!"
+);
 console.log(disemvowel("That car is cool"), "Tht cr s cl!");
+console.log(disemvowel("This is a test"), "Ths s tst!");
