@@ -6,19 +6,19 @@ Examples
 
  */
 
-function toCamelCase(str){
-    let result = ""
-    
-    for(let i = 0; i < str.length; i++){
-      if(str[i] === "_" || str[i] === "-"){
-        result += str[i+1].toUpperCase()
-        i++
-      }else{
-        result += str[i]
-      }
-    }
-  return result
-  }
+function toCamelCase(str) {
+  let result = "";
 
-  console.log(toCamelCase(the-stealth-warrior), theStealthWarrior)
-  console.log(toCamelCase(the_bull), theBull)
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "_" || str[i] === "-") {
+      result += str[i + 1].toUpperCase();
+      i++;
+    } else {
+      result += str[i];
+    }
+  }
+  return result;
+}
+
+console.log(toCamelCase("the-stealth-warrior"), "theStealthWarrior");
+console.log(toCamelCase("the_bull"), "theBull");
