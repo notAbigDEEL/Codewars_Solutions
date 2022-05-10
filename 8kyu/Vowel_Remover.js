@@ -11,6 +11,7 @@ Examples
  */
 
 function shortcut(string) {
+  console.log(string);
   let strArr = string.split("");
   let vowels = ["a", "e", "i", "o", "u"];
   let result = [];
