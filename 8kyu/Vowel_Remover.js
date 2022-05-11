@@ -12,19 +12,14 @@ Examples
 
 function shortcut(string) {
   let strArr = string.split("");
+  let vowels = ["a", "e", "i", "o", "u"];
   let result = [];
   for (let i = 0; i < strArr.length; i++) {
-    if (
-      strArr[i] === "a" ||
-      strArr[i] === "e" ||
-      strArr[i] === "i" ||
-      strArr[i] === "o" ||
-      strArr[i] === "u"
-    ) {
-      strArr[i] = "";
+    if (!vowels.includes(strArr[i])) {
+      result.push(strArr[i]);
     }
   }
-  return strArr.join("");
+  return result.join("");
 }
 
 console.log(shortcut("hello"), "hll");
