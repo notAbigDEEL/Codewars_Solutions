@@ -19,3 +19,22 @@ age = 17   =>   15-20
 
 
  */
+
+
+function datingRange(age){
+    let max = 0
+    
+    if (age < 15){
+      min = Math.floor(age - 0.10 * age)
+      max = Math.floor(age + 0.10 * age)
+    }else{
+      min = Math.floor((age/2) + 7)
+      max = Math.floor((age - 7) * 2)
+    }
+    
+    return `${min}-${max}`
+  }
+
+  console.log(datingRange(27), "20-40")
+  console.log(datingRange(5), "4-5")
+  console.log(datingRange(17), "15-20")
