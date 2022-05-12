@@ -8,25 +8,28 @@ For example (Input --> Output):
 
  */
 
-
 function persistence(num) {
-    let numArr = num.toString().split("")
-    let product = 0
-    let count = 0
-  
-    if(numArr.length === 1){
-      return count
-    }
-    while(numArr.length > 1){
-      let product = numArr.reduce((accum, curr) => accum * curr)
-      numArr = product.toString().split("")
-      count++
-    }
-    
-    return count
-  
-  }
+  let count = 0;
+  let numArr = num
+    .toString()
+    .split("")
+    .map((x) => +x);
 
+  while (numArr.length > 1)
+    if (numArr.length === 1) {
+      return 0;
+    } else {
+      for (let i = 0; i < numArr.length; i++) {
+        numArr = numArr
+          .reduce((accum, curr) => accum * curr)
+          .toString()
+          .split("")
+          .map((x) => +x);
+        count++;
+      }
+    }
+  return count;
+}
 
 console.log(persistence(39), 3);
 console.log(persistence(999), 4);
