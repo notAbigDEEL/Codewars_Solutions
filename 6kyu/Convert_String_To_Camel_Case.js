@@ -4,7 +4,8 @@ Examples
 "the-stealth-warrior" gets converted to "theStealthWarrior"
 "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
 
- */
+ 
+*/
 
 function toCamelCase(str) {
   let result = "";
