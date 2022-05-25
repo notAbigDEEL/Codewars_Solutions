@@ -8,3 +8,17 @@ In this kata, the function will take a string as its argument, and return a stri
 
  */
 
+function toFreud(string) {
+  if (!string) {
+    return "";
+  }
+
+  return string
+    .split(" ")
+    .map((x) => "sex")
+    .join(" ");
+}
+
+console.log(toFreud("hello there"), "sex sex");
+console.log(toFreud("how are you"), "sex sex sex");
+console.log(toFreud("How do you do?"), "sex sex sex sex")
