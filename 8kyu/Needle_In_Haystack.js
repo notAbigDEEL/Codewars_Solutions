@@ -1,4 +1,5 @@
-/* Can you find the needle in the haystack?
+/*
+ Can you find the needle in the haystack?
 
 Write a function findNeedle() that takes an array full of junk but containing one "needle"
 
@@ -13,9 +14,12 @@ should return "found the needle at position 5" (in COBOL "found the needle at po
  */
 
 function findNeedle(haystack) {
-    if(haystack.indexOf('needle')!== -1){
-      return `found the needle at position ${haystack.indexOf('needle')}`
-    }
+  if (haystack.indexOf("needle") !== -1) {
+    return `found the needle at position ${haystack.indexOf("needle")}`;
   }
+}
 
-    console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']),'found the needle at position 5');
+console.log(
+  findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]),
+  "found the needle at position 5"
+);
