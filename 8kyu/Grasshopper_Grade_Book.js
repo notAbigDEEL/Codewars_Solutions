@@ -28,4 +28,5 @@ function getGrade(s1, s2, s3) {
 }
 
 console.log(getGrade(86, 92, 88), "B");
-console.log(getGrade(90, 98, 89), "A")
+console.log(getGrade(90, 98, 89), "A");
+console.log(getGrade(77, 98, 80), "B");
