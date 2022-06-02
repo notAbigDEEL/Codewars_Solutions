@@ -5,6 +5,7 @@ Your inputs: a positive integer, n, greater than or equal to one. n is provided,
 Your expected output is an array of positive integers from 1 to n (inclusive).
 
 Your job is to write an algorithm that gets you from the input to the output.
+
 */
 
 function preFizz(n) {
