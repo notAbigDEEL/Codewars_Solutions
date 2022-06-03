@@ -13,3 +13,4 @@ function twoDecimalPlaces(n) {
 console.log(twoDecimalPlaces(5.5589), 5.56);
 console.log(twoDecimalPlaces(3.3424), 3.34);
 console.log(twoDecimalPlaces(5.8725), 5.87);
+console.log(twoDecimalPlaces(9.6258), 9.62);
