@@ -14,6 +14,7 @@ Examples
 20, 1  -->  "10x^2"
 40, 3  -->  "10x^4"
 90, 2  -->  "30x^3"
+
 */
 
 function integrate(coefficient, exponent) {
