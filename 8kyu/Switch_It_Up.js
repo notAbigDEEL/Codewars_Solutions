@@ -1,4 +1,4 @@
-/*When provided with a number between 0-9, return it in words.
+/* When provided with a number between 0-9, return it in words.
 
 Input :: 1
 
@@ -39,4 +39,3 @@ console.log(switchItUp(1), "One");
 console.log(switchItUp(0), "Zero");
 console.log(switchItUp(9), "Nine");
 console.log(switchItUp(10), "Not a number");
-
