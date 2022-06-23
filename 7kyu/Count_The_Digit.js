@@ -1,4 +1,5 @@
-/* Square all numbers k (0 <= k <= n) between 0 and n.
+/* 
+Square all numbers k (0 <= k <= n) between 0 and n.
 
 Count the numbers of digits d used in the writing of all the k**2.
 
@@ -19,11 +20,11 @@ Note that 121 has twice the digit 1.
  */
 
 function nbDig(n, d) {
-    let str = ""
-    for (let i = 0; i <= n; i++){
-      str += (i*i)
-    }
-    return str.split(`${d}`).length - 1  
+  let str = "";
+  for (let i = 0; i <= n; i++) {
+    str += i * i;
+  }
+  return str.split(`${d}`).length - 1;
 }
 
 console.log(nbDig(10, 1), 4);
