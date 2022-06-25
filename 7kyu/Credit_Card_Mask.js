@@ -2,6 +2,7 @@
 screen. Instead, we mask it.
 
 Your task is to write a function maskify, which changes all but the last four characters into '#'.
+
 Examples
 
 "4556364607935616" --> "############5616"
