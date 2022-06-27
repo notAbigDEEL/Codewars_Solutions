@@ -17,7 +17,6 @@ dnaStrand [A,T,G,C] `shouldBe` [T,A,C,G]
 dnaStrand [G,T,A,T] `shouldBe` [C,A,T,A]
 dnaStrand [A,A,A,A] `shouldBe` [T,T,T,T]
 
-
  */
 
 function DNAStrand(dna) {
