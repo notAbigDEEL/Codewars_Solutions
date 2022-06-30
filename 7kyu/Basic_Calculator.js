@@ -1,4 +1,5 @@
-/* Write a function called calculate that takes 3 values. The first and third values are numbers. The second value is a character. If the character is "+" , "-", "*", or "/", the function will return the result of the corresponding mathematical function on the two numbers. If the string is not one of the specified characters, the function should return null (throw an ArgumentException in C#).
+/* 
+Write a function called calculate that takes 3 values. The first and third values are numbers. The second value is a character. If the character is "+" , "-", "*", or "/", the function will return the result of the corresponding mathematical function on the two numbers. If the string is not one of the specified characters, the function should return null (throw an ArgumentException in C#).
 
 calculate(2,"+", 4); //Should return 6
 calculate(6,"-", 1.5); //Should return 4.5
@@ -12,27 +13,23 @@ Keep in mind, you cannot divide by zero. If an attempt to divide by zero is made
  */
 
 function calculate(num1, operation, num2) {
-    if(operation === "+"){
-      return num1 + num2
-    }
-    else if (operation === "-"){
-      return num1 - num2
-    }
-    else if (operation === "*"){
-      return num1 * num2
-    }
-    else if (operation === "/" && num2 > 0){
-      return num1 / num2
-    }
-     else if(num2 === 0){
-       return null
-     }else if(num1 < 0 || num2 < 0){
-       return num1/num2
-     }else{
-       return null
-     }
-   }
+  if (operation === "+") {
+    return num1 + num2;
+  } else if (operation === "-") {
+    return num1 - num2;
+  } else if (operation === "*") {
+    return num1 * num2;
+  } else if (operation === "/" && num2 > 0) {
+    return num1 / num2;
+  } else if (num2 === 0) {
+    return null;
+  } else if (num1 < 0 || num2 < 0) {
+    return num1 / num2;
+  } else {
+    return null;
+  }
+}
 
-    console.log(calculate(2,"+", 4), 6); //Should return 6
-    console.log(calculate(6,"-", 1.5), 4.5); //Should return 4.5
-    console.log(calculate(-4,"*", 8), -32); //Should return -32
+console.log(calculate(2, "+", 4), 6); //Should return 6
+console.log(calculate(6, "-", 1.5), 4.5); //Should return 4.5
+console.log(calculate(-4, "*", 8), -32); //Should return -32
