@@ -1,4 +1,5 @@
-/* An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
+/* 
+An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
 
 Note: anagrams are case insensitive
 
@@ -11,16 +12,14 @@ Examples
 
  */
 
+var isAnagram = function (test, original) {
+  let testSorted = test.toLowerCase().split("").sort().join("");
+  let origSorted = original.toLowerCase().split("").sort().join("");
 
-var isAnagram = function(test, original) {
-    let testSorted = test.toLowerCase().split("").sort().join("")
-    let origSorted = original.toLowerCase().split("").sort().join("")
-    
-    return testSorted === origSorted
-  
-  };
+  return testSorted === origSorted;
+};
 
-    console.log(isAnagram("foefet", "toffee"), true);
-    console.log(isAnagram("Buckethead", "DeathCubeK"), true);
-    console.log(isAnagram("Twoo", "WooT"), true);
-    console.log(isAnagram("Twoio", "Woot"), false);
+console.log(isAnagram("foefet", "toffee"), true);
+console.log(isAnagram("Buckethead", "DeathCubeK"), true);
+console.log(isAnagram("Twoo", "WooT"), true);
+console.log(isAnagram("Twoio", "Woot"), false);
