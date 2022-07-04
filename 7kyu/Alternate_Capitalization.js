@@ -4,7 +4,6 @@ Given a string, capitalize the letters that occupy even indexes and odd indexes 
 For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
 
 The input will be a lowercase string with no spaces.
-
  */
 
 function capitalize(s) {
