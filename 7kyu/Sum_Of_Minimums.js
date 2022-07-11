@@ -1,4 +1,5 @@
-/* Given a 2D ( nested ) list ( array, vector, .. ) of size m * n, your task is to find the sum of the minimum values in each row.
+/* 
+Given a 2D ( nested ) list ( array, vector, .. ) of size m * n, your task is to find the sum of the minimum values in each row.
 
 For Example:
 
@@ -14,13 +15,35 @@ Note: You will always be given a non-empty list containing positive values.
  */
 
 function sumOfMinimums(arr) {
-    let minVal = 0
-    for(let i = 0; i < arr.length; i++){
-      minVal += Math.min(...arr[i])
-    }
-    return minVal
+  let minVal = 0;
+  for (let i = 0; i < arr.length; i++) {
+    minVal += Math.min(...arr[i]);
   }
+  return minVal;
+}
 
-    console.log(sumOfMinimums([[1, 2, 3, 4, 5], [5, 6, 7, 8, 9], [20, 21, 34, 56, 100]]), 26);
-    console.log(sumOfMinimums([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), 12);
-    console.log(sumOfMinimums([[1, 2, 3, 4, 5], [5, 6, 7, 8, 9], [20, 21, 34, 56, 100], [1, 2, 3, 4, 5]]), 27);
+console.log(
+  sumOfMinimums([
+    [1, 2, 3, 4, 5],
+    [5, 6, 7, 8, 9],
+    [20, 21, 34, 56, 100],
+  ]),
+  26
+);
+console.log(
+  sumOfMinimums([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ]),
+  12
+);
+console.log(
+  sumOfMinimums([
+    [1, 2, 3, 4, 5],
+    [5, 6, 7, 8, 9],
+    [20, 21, 34, 56, 100],
+    [1, 2, 3, 4, 5],
+  ]),
+  27
+);
