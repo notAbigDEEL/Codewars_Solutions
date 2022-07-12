@@ -1,4 +1,5 @@
-/*Given the triangle of consecutive odd numbers:
+/*
+Given the triangle of consecutive odd numbers:
 
              1
           3     5
@@ -15,10 +16,10 @@ Calculate the sum of the numbers in the nth row of this triangle (starting at in
 */
 
 function rowSumOddNumbers(n) {
-    return n*n*n
-  }
+  return n * n * n;
+}
 
-    console.log(rowSumOddNumbers(1), 1);
-    console.log(rowSumOddNumbers(2), 8);
-    console.log(rowSumOddNumbers(3), 27);
-    console.log(rowSumOddNumbers(4), 64);
+console.log(rowSumOddNumbers(1), 1);
+console.log(rowSumOddNumbers(2), 8);
+console.log(rowSumOddNumbers(3), 27);
+console.log(rowSumOddNumbers(4), 64);
