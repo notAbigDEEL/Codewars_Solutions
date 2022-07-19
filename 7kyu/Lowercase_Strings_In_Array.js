@@ -1,5 +1,5 @@
 /* 
-]Create a function to lowercase all strings in an array. Non-string items should remain unchanged.
+Create a function to lowercase all strings in an array. Non-string items should remain unchanged.
 Example
 
 arrayLowerCase(['Red', 'Green']) == ['red', 'green']
