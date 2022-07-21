@@ -1,4 +1,5 @@
-/*Complete the function that receives as input a string, and produces outputs according to the following table:
+/*
+Complete the function that receives as input a string, and produces outputs according to the following table:
 Input 	Output
 "Jabroni" 	"Patron Tequila"
 "School Counselor" 	"Anything with Alcohol"
@@ -14,25 +15,25 @@ Make sure you cover the cases where certain words do not show up with correct ca
 
  */
 
-function getDrinkByProfession(param){
-    let LowParam = param.toLowerCase();
-    if(LowParam === "jabroni"){
-        return "Patron Tequila";
-    } else if(LowParam === "school counselor"){
-        return "Anything with Alcohol";
-    } else if(LowParam === "programmer"){
-        return "Hipster Craft Beer";
-    } else if(LowParam === "bike gang member"){
-        return "Moonshine";
-    } else if(LowParam === "politician"){
-        return "Your tax dollars";
-    } else if(LowParam === "rapper"){
-        return "Cristal";
-    } else {    //anything else
-        return "Beer";
-    }
+function getDrinkByProfession(param) {
+  let LowParam = param.toLowerCase();
+  if (LowParam === "jabroni") {
+    return "Patron Tequila";
+  } else if (LowParam === "school counselor") {
+    return "Anything with Alcohol";
+  } else if (LowParam === "programmer") {
+    return "Hipster Craft Beer";
+  } else if (LowParam === "bike gang member") {
+    return "Moonshine";
+  } else if (LowParam === "politician") {
+    return "Your tax dollars";
+  } else if (LowParam === "rapper") {
+    return "Cristal";
+  } else {
+    //anything else
+    return "Beer";
+  }
 }
-
 
 console.log(getDrinkByProfession("Jabroni"), "Patron Tequila");
 console.log(getDrinkByProfession("School Counselor"), "Anything with Alcohol");
