@@ -5,6 +5,7 @@ Example
 "identifier"   =>  "identifier"
 ""             =>  ""
 
+
  */
 
 function solution(string) {
