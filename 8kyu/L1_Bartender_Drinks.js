@@ -40,3 +40,17 @@ console.log(getDrinkByProfession("Programmer"), "Hipster Craft Beer");
 console.log(getDrinkByProfession("Bike Gang Member"), "Moonshine");
 console.log(getDrinkByProfession("Rapper"), "Cristal");
 console.log(getDrinkByProfession("pOLitiCIaN"), "Your tax dollars");
+
+
+function outer(){
+    let counter = 0
+    function inner(){
+        counter++
+        console.log(counter)
+    }
+    return inner
+}
+
+const fn = outer()
+fn()
+fn()
