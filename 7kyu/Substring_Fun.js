@@ -1,4 +1,5 @@
-/*Complete the function that takes an array of words.
+/*
+Complete the function that takes an array of words.
 
 You must concatenate the nth letter from each word to construct a new word which should be returned as a string, where n is the position of the word in the list.
 
@@ -13,15 +14,15 @@ Note: Test cases contain valid input only - i.e. a string array or an empty arra
  */
 
 function nthChar(words) {
-    let result = "";
-    if (words.length === 0) {
-      return "";
-    }
-    for (let i = 0; i < words.length; i++) {
-      result += words[i][i];
-    }
-    return result;
+  let result = "";
+  if (words.length === 0) {
+    return "";
   }
+  for (let i = 0; i < words.length; i++) {
+    result += words[i][i];
+  }
+  return result;
+}
 
 console.log(nthChar(["yoda", "best", "has"]), "yes");
 console.log(nthChar(["best", "has"]), "ba");
